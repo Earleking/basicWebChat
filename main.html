@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/Frontend/main.css">
+</head>
+
+
+<body>
+    <span class="popupText" id="login">
+        <input id="username"><button onclick="submitUsername()">Submit</button>
+    </span>
+    <div class="mainBody" id="main">
+        Hello World!!
+        Name of other user:<input id="otherName"><button id="connect" onclick="connectToUser()">Connect</button>
+        <br>
+        <div>
+            <div class="msgBox" id="chatBox">
+                Your convo starts here
+            </div>
+            <input id="msgToSend">
+            <button onclick="sendMsg()" type="button">Send</button>
+        </div>
+    </div>        
+
+
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/Frontend/main.js"></script>
+
+</html>
